@@ -1,0 +1,98 @@
+﻿"tableNessaryBuildingTime": {
+  "volume": [ 5, 10, 20, 25, 40, 60 ],
+  "time": {
+    "Kolosniki": [ 1.5, 2, 2.5, 2.5 ],
+    "notKolosniki": [ 2, 3, 3.5, 3.7, 4, 4.5 ]
+  }
+}, "koefficient": {
+  "constructive": 0.3,
+  "height": {
+    "level": [ 0.5, 0.8 ],
+    "decrease": [ 0.3, 0.5 ]
+  }
+}, "formula": {
+
+  "volumeLim": 60,
+  "kofficient": "0.00"
+
+
+}, "measure": {
+  "volume": "м куб.",
+  "time": "мин.",
+  "height": "м"
+}, "tableNessaryHallTime": {
+  "volume": [ 6, 10 ],
+  "timeNotKolosniki": [],
+  "timeKolosniki": []
+}, "timeFromBuilding": {
+  "volume": 60,
+  "time": [ 6, 10 ]
+
+}, "name": {
+  "hall": "Зальное помещение",
+  "building": " Здание",
+  "fireSection": "пожарный отсек",
+  "exit": "Выход"
+
+}, "constructiveClass": [ "C0", " C1", "C2", "C3", "C4" ], "inputDefaultData": {
+  "name": {
+    "scenary": "Сценарий",
+    "hall": "Зальное помещение",
+    "exit": "Выход",
+    "report": "Отчет"
+  },
+  "kolosniki": "Зал с колосниковой сценой",
+  "notKolosniki": "Зал без колосниковой сцены",
+}, "method": {
+  "interpolation": {
+    "name": "интерполяция",
+    "line": "линейная",
+    "cube": "кубическая"
+  },
+  "exitHeight": {
+    "fromBottom": "от нижней кромки",
+    "fromUp" "от верхней кромки"
+  }
+
+
+
+
+}, "iput":
+{
+
+  "question" {
+    "scName": "Наименование сценария",
+
+    "methodName" "Метод расчета",
+    "hallname": "Наименование зального помещения",
+    "volume": "Объем помещения"
+    "kolosniki": "Имеются ли колосники",
+    "height": "Высота помещения",
+    "heightMeasereMethod": "Метод измерения высоты выходов",
+    "exitName": "Наименование выхода",
+
+    "exitLevel": "Уровень расположения выхода",
+    "exitHeightUpToceil": "Высота до потолка"
+    "addExit": "Добавить выход?",
+
+    "addHall": "12.Добавить помещение?",
+    "addscenary": "Добавить сценраий?",
+    "pathToReportFile": "Путь к файлу отчета.",
+
+    "formatReport": "Формат отчета",
+
+
+  },
+  "answer": {
+    "yes": "да",
+    "no": "нет",
+    "y": "д",
+    "n": "н"
+
+  },
+  "keys": {
+    "default": "/def",
+    "help": "/help"
+  }
+}
+
