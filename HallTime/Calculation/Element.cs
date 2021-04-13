@@ -9,13 +9,21 @@ namespace HallTime.Calculation
     {
         public Guid id;
         public string name;
-        public uint number;
+        protected virtual uint Number { get;set; }
+
         public double korrection;
         public Element parent;
         public HashSet<Element> children;
         public TimeSpan NessaryTime { get; set; }
         
         public string stringFullOfJson;
+
+        private static uint numExit=0;
+        private static uint numHall=0;
+        private static uint numScenary=0;
+        private static uint numFireSection=0;
+
+
 
 
         public Element(Element elem, HashSet<Element> elChildren):this(elem)
@@ -24,6 +32,23 @@ namespace HallTime.Calculation
         }
         public Element()
         {
+            id = new Guid();
+
+            Type type = ((Object)this).GetType();
+
+
+
+//Задание имен элементов по умолчанию.
+            if ((this is Hall)) name = "Зальное_помещение" + numHall;
+            else if ((this is Exit)) name = "Выход" + numExit;
+            else if ((this is FireSection)) name = "Пожарный_отсек" + numFireSection;
+            else if ((this is FireSection)) name = "Сценарий" + numScenary;
+            else;
+
+
+
+
+
             parent = null;
             children = null;
             //или
@@ -46,6 +71,25 @@ namespace HallTime.Calculation
             int page = (int)token.SelectToken("page");
             int totalPages = (int)token.SelectToken("total_pages");
         }
+
+        bool Rename(string newName)
+        {
+            name = newName;
+            return true;
+        }
+        public virtual bool Remove(Element elem) {
+            elem.parent.children.Remove(elem);
+            return true; }
+        public virtual bool Add(Element elem) {
+            this.children.Add(elem);
+            elem.parent = this;
+
+            return true; }
+
+
+
+
+
 
     }
 }

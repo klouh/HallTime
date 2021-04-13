@@ -13,6 +13,7 @@ namespace HallTime.Calculation
 
         FireSection():base()
         {
+            
             constractiveClass = "C0";
         }
         FireSection(string constractive) : this()
