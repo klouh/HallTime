@@ -11,7 +11,7 @@ namespace HallTime.Calculation
         protected string name;
         protected uint number;
         protected double korrection;
-        protected TimeSpan NessaryTime { get;set};
+        protected TimeSpan NessaryTime { get; set};
         
         protected string stringFullOfJson;
 

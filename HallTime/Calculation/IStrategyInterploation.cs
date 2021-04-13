@@ -6,5 +6,6 @@ namespace HallTime.Calculation
 {
     interface IStrategyInterploation
     {
+        double interpolate(double[] tblvolume,double[] time,double volume);
     }
 }
