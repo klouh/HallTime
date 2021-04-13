@@ -4,7 +4,8 @@ using System.Text;
 
 namespace HallTime.Calculation
 {
-    class Scenary:Element
+    public class Scenary:Element
     {
+        public HashSet<FireSection> halls;
     }
 }

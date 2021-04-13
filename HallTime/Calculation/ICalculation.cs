@@ -6,6 +6,6 @@ namespace HallTime.Calculation
 {
     interface ICalculation
     {
-        List calculate(List data, StrategyInterploation strategy);
+        object calculate(object data, IStrategyInterploation strategy);
     }
 }

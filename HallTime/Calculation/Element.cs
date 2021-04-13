@@ -7,13 +7,34 @@ namespace HallTime.Calculation
 {
     public class Element
     {
-        protected Guid id;
-        protected string name;
-        protected uint number;
-        protected double korrection;
-        protected TimeSpan NessaryTime { get; set};
+        public Guid id;
+        public string name;
+        public uint number;
+        public double korrection;
+        public Element parent;
+        public HashSet<Element> children;
+        public TimeSpan NessaryTime { get; set; }
         
-        protected string stringFullOfJson;
+        public string stringFullOfJson;
+
+
+        public Element(Element elem, HashSet<Element> elChildren):this(elem)
+        {
+            children = elChildren;
+        }
+        public Element()
+        {
+            parent = null;
+            children = null;
+            //или
+            parent = this;
+            children.Add(this) ;
+        }
+        public Element(Element elem ): this()
+        {
+            parent = elem;
+        }
+
 
         void fn()
         {

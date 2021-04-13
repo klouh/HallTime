@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HallTime.Calculation
 {
-    interface IStrategyInterploation
+    public interface IStrategyInterploation
     {
         double interpolate(double[] tblvolume,double[] time,double volume);
     }
