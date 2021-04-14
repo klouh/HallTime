@@ -77,8 +77,8 @@ namespace HallTime.Calculation
             name = newName;
             return true;
         }
-        public virtual bool Remove(Element elem) {
-            elem.parent.children.Remove(elem);
+        public virtual bool Remove() {
+            this.parent.children.Remove(this);
             return true; }
         public virtual bool Add(Element elem) {
             this.children.Add(elem);

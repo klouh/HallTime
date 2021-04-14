@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HallTime.Output
 {
-    class ReportGenTXT:ReportGenRTF
+    public class ReportGenTXT:ReportGenRTF
     {
     }
 }

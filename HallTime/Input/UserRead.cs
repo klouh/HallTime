@@ -15,7 +15,7 @@ namespace UnitTestHallTime.Input
     {
         DataContractJsonSerializer json = new DataContractJsonSerializer(typeof(UserRead));
         string fileContent = File.ReadAllText(Directory.GetCurrentDirectory() + "config.json");
-        UserRead jsonn = (UserRead)json.ReadObject(new System.IO.MemoryStream(Encoding.UTF8.GetBytes(fileContent)));
+        //UserRead jsonn = (UserRead)json.ReadObject(new System.IO.MemoryStream(Encoding.UTF8.GetBytes(fileContent)));
 
         Dictionary<String, Object> myMap;
 
@@ -45,7 +45,7 @@ namespace UnitTestHallTime.Input
             //14.Путь файла отчета. (директория exe файла прогрограмы)
             //15.Формат отчета. (txt, можно попробывать html или rtf)
 
-            read<T>(string welcome, string fieldName, object inputData)
+            
 
         }
 

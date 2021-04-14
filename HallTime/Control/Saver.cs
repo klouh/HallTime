@@ -8,11 +8,11 @@ namespace HallTime.Control
     {
         //Сериализация
                     // сохранение данных
-            using (FileStream fs = new FileStream("user.json", FileMode.OpenOrCreate))
-            {
-                Person tom = new Person() { Name = "Tom", Age = 35 };
-    await JsonSerializer.SerializeAsync<Person>(fs, tom);
-    Console.WriteLine("Data has been saved to file");
-            }
-    }
+    //        using (FileStream fs = new FileStream("user.json", FileMode.OpenOrCreate))
+    //        {
+    //            Person tom = new Person() { Name = "Tom", Age = 35 };
+    //await JsonSerializer.SerializeAsync<Person>(fs, tom);
+    //Console.WriteLine("Data has been saved to file");
+       }
+    
 }

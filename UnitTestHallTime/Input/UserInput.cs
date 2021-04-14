@@ -4,15 +4,15 @@ using System.Text;
 
 namespace UnitTestHallTime.Input
 {
-        public static UserInput jsonToDb(UserInput userInput)
-    { 
+       // public static UserInput jsonToDb(UserInput userInput)
+    //{ 
 
-            Gson g = new Gson();
+          //  Gson g = new Gson();
 
-            String json = userInput.toJson(userInput);
+           // String json = userInput.toJson(userInput);
 
-    UserInput user = g.fromJson(json, UserInput.class);
+    //UserInput user = g.fromJson(json, UserInput.class);
 
 
-}
+//}
 }

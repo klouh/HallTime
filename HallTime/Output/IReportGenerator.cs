@@ -4,8 +4,8 @@ using System.Text;
 
 namespace HallTime.Output
 {
-    interface IReportGenerator
+    public interface IReportGenerator
     {
-        void generate(string path, string data);
+        bool generate(string data, string path);
     }
 }
