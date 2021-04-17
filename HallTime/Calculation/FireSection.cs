@@ -9,8 +9,6 @@ namespace HallTime.Calculation
         string constractiveClass;
         HashSet<Hall> halls;
 
-
-
         FireSection():base()
         {
             

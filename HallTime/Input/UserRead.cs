@@ -53,22 +53,8 @@ namespace UnitTestHallTime.Input
         void read<T>(string welcome, string fieldName)
         {
             Console.WriteLine(welcome);
-            object inputData=int.Parse(Console.ReadLine());
+            object inputData = int.Parse(Console.ReadLine());
             myMap.Add(fieldName, (T) inputData);
-        }
-
-        void toJSON()
-        {
-            try
-            {
-                string jsonStr;
-                jsonStr=JsonConvert.SerializeObject(myMap);
-                Console.WriteLine(jsonStr);
-            }
-            catch (JsonException e)
-            {
-                e.StackTrace.ToString();
-            }
         }
     }
 }

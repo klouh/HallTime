@@ -1,0 +1,67 @@
+"tableNessaryBuildingTime":{
+   "volume":[
+      5,
+      10,
+      20,
+      25,
+      40,
+      60
+   ],
+   "time":{
+      "Kolosniki":[
+         1.5,
+         2,
+         2.5,
+         2.5
+      ],
+      "notKolosniki":[
+         2,
+         3,
+         3.5,
+         3.7,
+         4,
+         4.5
+      ]
+   }
+},
+"koefficient":{
+   "constructive":0.3,
+   "height":{
+      "level":[
+         0.5,
+         0.8
+      ],
+      "decrease":[
+         0.3,
+         0.5
+      ]
+   }
+},
+"formula":{
+   "volumeLim":60,
+   "kofficient":"0.00"
+},
+"measure":{
+   "volume":"м куб.",
+   "time":"мин.",
+   "height":"м"
+},
+"tableNessaryHallTime":{
+   "volume":[
+      6,
+      10
+   ],
+   "timeNotKolosniki":[
+      
+   ],
+   "timeKolosniki":[
+      
+   ]
+},
+"timeFromBuilding":{
+   "volume":60,
+   "time":[
+      6,
+      10
+   ]
+}
